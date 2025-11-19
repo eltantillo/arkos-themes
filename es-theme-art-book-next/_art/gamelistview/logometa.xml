@@ -1,0 +1,83 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+    <view name="detailed,video">
+		<textlist name="gamelist">
+			<fontPath>./../_art/Acre.otf</fontPath>
+			<fontSize>0.04</fontSize>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<lineSpacing>1.4</lineSpacing>
+			<origin>1.05 0.025</origin>
+			<size>.49 .76</size>
+		</textlist>
+
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.75 0.4</pos>
+			<maxSize>0.48 0.48</maxSize>
+			<delay>1</delay>
+			<zIndex>2</zIndex>         
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<effect>none</effect>
+		</video>
+
+		<image name="md_marquee">
+			<origin>0.5 0.01</origin>
+			<pos>0.75 0.01</pos>
+			<maxSize>0.45 0.45</maxSize>
+			<zIndex>3</zIndex>
+		</image>
+
+		<text name="md_lbl_genre, md_lbl_players, md_genre, md_players, md_description" extra="true">
+			<fontSize>0.038</fontSize>
+			<color>${secondaryColor}</color>
+		</text>
+
+		<rating name="md_rating">
+			<pos>0.75 0.65</pos>
+			<size>0.1 0.03</size>
+			<origin>0.5 0</origin>
+			<filledPath>./../_art/assets/icons/star_filled.png</filledPath>
+			<unfilledPath>./../_art/assets/icons/star_unfilled.png</unfilledPath>
+			<color>${selectedColor}</color>
+		</rating>
+
+		<text name="md_lbl_genre">
+			<pos>0.5 0.7</pos>
+			<size>0.3 0.025</size>
+			<text>Género:</text>
+		</text>
+
+		<text name="md_genre">
+			<pos>0.7 0.7</pos>
+			<size>0.3 0.025</size>
+		</text>	
+
+		<text name="md_lbl_players">
+			<pos>0.5 0.75</pos>
+			<size>0.3 0.025</size>
+			<text>Jugadores:</text>
+		</text>
+		
+		<text name="md_players">
+			<pos>0.7 0.75</pos>
+			<size>0.3 0.025</size>
+		</text>
+		
+		<text name="md_description">
+			<pos>0.5 0.8</pos>
+			<size>0.49 0.16</size>
+			<lineSpacing>1.1</lineSpacing>
+		</text>
+			
+		<image name="list_name_logo" extra="true">
+			<path>./../_art/logos/${system.theme}.svg</path>
+			<maxSize>0.4 0.1</maxSize>
+			<pos>0.25 0.05</pos>
+			<origin>0.5 0</origin>
+			<color>${mainColor}</color>
+		</image>
+	</view>
+</theme>
